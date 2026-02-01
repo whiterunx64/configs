@@ -1,0 +1,272 @@
+* {
+    font-family: "VictorMono Nerd Font", sans-serif;
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: #333333; /* Dark grey background */
+    border-bottom: 1px solid #444444; /* Subtle dark border */
+    color: #d3d3d3; /* Light grey text */
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+    padding: 2px 4px; /* Reduced padding to reduce spacing */
+}
+
+/* Hover effect */
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button {
+    padding: 2px 4px; /* Reduced padding */
+    background-color: transparent;
+    color: #d3d3d3;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.focused {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#mode {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+/* Modules with reduced padding */
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#power-profiles-daemon,
+#mpd {
+    padding: 0 6px; /* Reduced padding */
+    background-color: transparent;
+    color: #d3d3d3;
+}
+
+#window,
+#workspaces {
+    margin: 0 3px; /* Reduced margin */
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    background-color: transparent;
+}
+
+#battery {
+    color: #d3d3d3;
+}
+
+#battery.charging, #battery.plugged {
+    background-color: transparent;
+}
+
+@keyframes blink {
+    to {
+        background-color: transparent;
+        color: #000000;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: transparent;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#power-profiles-daemon {
+    padding-right: 10px; /* Reduced padding */
+}
+
+#cpu {
+    color: #d3d3d3;
+}
+
+#memory {
+    color: #d3d3d3;
+}
+
+#disk {
+    color: #d3d3d3;
+}
+
+#backlight {
+    color: #d3d3d3;
+}
+
+#network {
+    color: #d3d3d3;
+}
+
+#network.disconnected {
+    color: #d3d3d3;
+}
+
+#pulseaudio {
+    color: #d3d3d3;
+}
+
+#pulseaudio.muted {
+    color: #7f8c8d;
+}
+
+#wireplumber {
+    color: #d3d3d3;
+}
+
+#wireplumber.muted {
+    color: #7f8c8d;
+}
+
+#custom-media {
+    color: #d3d3d3;
+    min-width: 100px;
+}
+
+#temperature {
+    color: #d3d3d3;
+}
+
+#temperature.critical {
+    color: #d3d3d3;
+}
+
+#tray {
+    color: #d3d3d3;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: transparent;
+    color: #d3d3d3;
+}
+
+#idle_inhibitor {
+		padding: 0 10px;
+    color: #d3d3d3;
+}
+
+#idle_inhibitor.activated {
+    color: #d3d3d3;
+}
+
+#mpd {
+    color: #d3d3d3;
+}
+
+#mpd.disconnected {
+    color: #d3d3d3;
+}
+
+#mpd.stopped {
+    color: #d3d3d3;
+}
+
+#mpd.paused {
+    color: #d3d3d3;
+}
+
+#language {
+    color: #d3d3d3;
+    padding: 0 4px; /* Reduced padding */
+    margin: 0 4px; /* Reduced margin */
+    min-width: 16px;
+}
+
+#keyboard-state {
+    color: #d3d3d3;
+    padding: 0 4px; /* Reduced padding */
+    margin: 0 4px; /* Reduced margin */
+    min-width: 16px;
+}
+
+#keyboard-state > label {
+    padding: 0 4px; /* Reduced padding */
+}
+
+#keyboard-state > label.locked {
+    color: #d3d3d3;
+}
+
+#scratchpad {
+    color: #d3d3d3;
+}
+
+#scratchpad.empty {
+    background-color: transparent;
+}
+
+#privacy {
+    padding: 0;
+}
+
+#privacy-item {
+    padding: 0 4px; /* Reduced padding */
+    color: white;
+}
+
+#privacy-item.screenshare {
+    color: #d3d3d3;
+}
+
+#privacy-item.audio-in {
+    color: #d3d3d3;
+}
+
+#privacy-item.audio-out {
+    color: #d3d3d3;
+}
+
