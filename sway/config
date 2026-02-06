@@ -32,6 +32,10 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
    output HDMI-A-5 mode 1920x1080@165.0002Hz position 0,0
    output eDP-1 mode 1920x1080@144.002Hz position 1920,0
+
+		output * max_render_time off
+		output eDP-1 adaptive_sync on
+		output * allow_tearing no
 #  output HDMI-A-5 disable
 #   output eDP-1 disable
 
