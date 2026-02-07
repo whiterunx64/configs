@@ -79,7 +79,7 @@
 	alias ...='cd ../..'
 	alias ....='cd ../../..'
 
-
+	alias grimshot='grim -g $(slurp) - | wl-copy'
 
 
 
