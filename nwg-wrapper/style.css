@@ -1,0 +1,24 @@
+window {
+    background-color: #282828;
+}
+
+#box-outer {
+    background-color: #282828;
+}
+
+#box-inner {
+    background-color: #282828;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    border-right: 4px solid #FCE94F; 
+    padding: 28px 30px;
+    min-width: 420px;
+}
+
+label {
+    color: #d3d3d3;
+}
+

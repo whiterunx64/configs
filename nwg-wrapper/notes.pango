@@ -1,0 +1,18 @@
+<span font="Iosevka Nerd Font 12" foreground="#ebdbb2">
+  <big><b>Notes</b></big>
+</span>
+
+<span font="Iosevka Nerd Font 10" foreground="#83a598">
+• Finish wlroots reading
+• Fix sway bindings
+• Clean dotfiles
+</span>
+
+<span font="Iosevka Nerd Font 10" foreground="#b8bb26">
+Tip:
+</span>
+
+<span font="Iosevka Nerd Font 10" foreground="#d3869b">
+Wayland doesn’t do X11 hacks 😛
+</span>
+
