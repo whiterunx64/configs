@@ -73,7 +73,7 @@
 				// "interface": "wlp2*",
 				"format-wifi": "{ifname}: {ipaddr}/{cidr}  ",
 				"format-ethernet": "{ifname}: {ipaddr}/{cidr}",
-				"tooltip-format": "{ifname} via {gwaddr} ",
+				"tooltip-format": "{ifname} via {gwaddr}  ",
 				"format-linked": "{ifname} (No IP) ",
 				"format-disconnected": "Disconnected ⚠ ",
 				"format-alt": "{essid} ({signalStrength}%)  "
@@ -157,4 +157,3 @@
         // }
     },
 }
-
