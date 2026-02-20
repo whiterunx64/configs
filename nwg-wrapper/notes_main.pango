@@ -1,0 +1,12 @@
+<span font='Victor Mono 12' foreground='#ebdbb2'><big><b>TODO LIST</b></big></span>
+
+<span font='Victor Mono 10' foreground='#b8bb26'><b>Networking todo</b></span>
+<span font='Victor Mono 10' foreground='#83a598'>Status: Pending / In Progress / Done</span>
+<span font='Victor Mono 10' foreground='#b8bb26'><b>Enumerating todo</b></span>
+<span font='Victor Mono 10' foreground='#83a598'>Status: Pending / In Progress / Done</span>
+<span font='Victor Mono 10' foreground='#b8bb26'><b>Operating system todo</b></span>
+<span font='Victor Mono 10' foreground='#83a598'>Status: Pending / In Progress / Done</span>
+<span font='Victor Mono 10' foreground='#b8bb26'><b>Notes</b></span>
+<span font='Victor Mono 10' foreground='#83a598'>Status: Pending / In Progress / Done</span>
+<span font='Victor Mono 10' foreground='#b8bb26'><b>Completion</b></span>
+<span font='Victor Mono 10' foreground='#83a598'>Status: Pending / In Progress / Done</span>
