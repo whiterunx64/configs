@@ -1,0 +1,105 @@
+* {
+	spacing: 0;
+	background-color: #28303f;
+}
+
+window {
+	background-color: #28303f;
+}
+
+mainbox {
+	children: [inputbar, message, mode-switcher, listview];
+	spacing: 25px;
+	padding: 20px 0;
+	border: 1px;
+	border-color: #63b0ef;
+}
+
+inputbar {
+	padding: 0 25px;
+	children: [prompt, textbox-prompt-colon, entry, case-indicator];
+}
+
+prompt {
+	text-color: #63b0ef;
+}
+
+textbox-prompt-colon {
+	expand: false;
+	str: ":";
+	margin: 0 1ch 0 0;
+	text-color: #63b0ef;
+}
+
+entry {
+	text-color: #e7e7e7;
+}
+
+case-indicator {
+	text-color: #fda1a0;
+}
+
+mode-switcher, message {
+	border: 1px 0;
+	border-color: #63b0ef;
+}
+
+button, textbox {
+	background-color: #303030;
+	text-color: #e7e7e7;
+	padding: 4px;
+}
+
+button selected {
+	background-color: #63b0ef;
+	text-color: #e7e7e7;
+}
+
+listview {
+	scrollbar: true;
+	margin: 0 10px 0 30px;
+}
+
+scrollbar {
+	background-color: #303030;
+	handle-color: #63b0ef;
+	handle-width: 8px;
+	border: 0 1px;
+	border-color: #63b0ef;
+	margin: 0 0 0 20px;
+}
+
+element {
+	padding: 4px;
+	spacing: 4px;
+	highlight: bold underline;
+	children: [element-icon, element-text];
+}
+
+element-text, element-icon {
+	background-color : inherit;
+	text-color       : inherit;
+	foreground-color : inherit;
+}
+
+element normal {
+	background-color: #28303f;
+	text-color: #e7e7e7;
+}
+
+element selected {
+	background-color: #262626;
+	text-color: #e7e7e7;
+}
+
+element normal normal, element selected normal, element alternate normal {
+	text-color: #e7e7e7;
+}
+
+element normal urgent, element selected urgent, element alternate urgent {
+	text-color: #fda1a0;
+}
+
+element normal active, element selected active, element alternate active {
+	text-color: #92cf9c;
+}

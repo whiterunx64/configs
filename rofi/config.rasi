@@ -1,0 +1,35 @@
+configuration {
+/* Global Setting */
+	font: "VictorMono Nerd Font 12";
+	show-icons: true;
+	icon-theme: "*";
+	matching: "fuzzy";
+	case-sensitive: false;
+	terminal: "foot";
+	cycle: false;
+	max-history-size: 10;
+/* Display Category*/
+	modes: "drun,window,run";
+	display-drun: "󰀻 Apps";
+	display-run: "󰌧 Run";
+	display-window: "󱂬 Windows";
+	display-ssh: "󰣀 SSH";
+	window-format: "{w}    {c}   {t}";
+/* Keybindings */
+	kb-cancel: "Escape";               // cancel / close rofi
+	kb-accept-entry: "Return";         // launch selected entry
+	kb-row-up: "k,Control+p,Up";       // move up
+	kb-row-down: "j,Control+n,Down";   // move down
+	kb-page-prev: "Page_Up";  // page up
+	kb-page-next: "Page_Down"; // page down
+	kb-row-first: "Home";              // jump to first entry
+	kb-row-last: "End";                // jump to last entry
+	kb-element-next: "Tab";            // next element (completion/column)
+	kb-element-prev: "Shift+Tab";      // previous element
+	kb-mode-next: "Control+Tab";       // next mode
+	kb-mode-previous: "Control+Shift+Tab"; // previous mode
+	kb-primary-paste: "Shift+Insert"; // paste into input
+	kb-remove-word-back: "Control+BackSpace";   // delete word backward
+	kb-remove-to-sol: "Control+u";      // delete to start of line
+	kb-clear-line: "Control+w";         // clear input line
+}
