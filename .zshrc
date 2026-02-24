@@ -6,11 +6,11 @@
 	SAVEHIST=200
 	WORDCHARS=${WORDCHARS//[\/]}
 	PROMPT_EOL_MARK=""              # hide EOL mark
-	PROMPT="[%F{34}%Buser@%m%b%f:%F{blue}%B%1~%b%f]\$(git_branch)$ %f"
+	PROMPT="[%F{34}%Buser@%m%b%f:%F{yellow}%B%~%b%f]\$(git_branch)$ %f"
 	
 # --- Completion Feature:
 	autoload -Uz compinit
-	compinit 
+	compinit -d ~/.cache/zcompdump 
 	zstyle ':completion:*' sort true
 	zstyle ':completion:*' use-cache on
 	zstyle ':completion:*' cache-path ~/.cache/zsh
