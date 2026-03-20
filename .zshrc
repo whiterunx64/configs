@@ -63,7 +63,9 @@
 # --- Environment:
 	export EDITOR='nvim'
 	export XDG_DATA_DIRS="$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:$XDG_DATA_DIRS"
-
+	#export PATH="$HOME/.local/share/gem/ruby/3.4.0/bin:$PATH"
+	export GEM_HOME="$HOME/.gem"
+  export PATH="$HOME/.gem/bin:$PATH"
 # --- Alias: 
 	alias clr='clear'
 	alias ip='ip --color=auto'
