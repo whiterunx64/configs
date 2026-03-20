@@ -3,12 +3,13 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
-
 # --- Explicit:
 	font pango:VictorMono Nerd Font 12
 	gaps inner 4px
 	gaps outer 4px
-
+# Auto tiling
+	exec_always autotiling -l 2
+	exec swaync
 # --- Variables:
 	set $mod Mod4
 	set $left h
@@ -101,8 +102,8 @@
 	bindsym $mod+Shift+0 move container to workspace number 10
 
 # --- Layout stuff:
-	bindsym $mod+q splith
-	bindsym $mod+e splitv
+	bindsym $mod+b splith
+  bindsym $mod+v splitv
 	bindsym $mod+s layout stacking
 	bindsym $mod+w layout tabbed
 	bindsym $mod+tab layout toggle split
@@ -138,15 +139,14 @@ bindsym $mod+r mode "resize"
 	bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 	bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 # Screenshots
-	bindsym Print exec grim
-	bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
+	bindsym $mod+Shift+s exec sh -c 'grim -g "$(slurp)" - | wl-copy'
+# Control Center Notification
+	bindsym $mod+Shift+n exec swaync-client -t -sw
 # --- Overlay:
 # Status bar
 	bar {
 			swaybar_command waybar
 	}
-# Sticky note
-	exec_always --no-startup-id nwg-wrapper -t ~/.config/nwg-wrapper/notes_main.pango -c ~/.config/nwg-wrapper/style.css -p right -a center -mr 20
 
 # --- Include system-wide configs:
 	include /etc/sway/config.d/*

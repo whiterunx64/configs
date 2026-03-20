@@ -48,7 +48,7 @@ button:hover {
 }
 
 #workspaces button {
-  padding: 0 10px;
+  padding: 0 5px;
   background-color: transparent;
   color: @text;
   margin: 0;
@@ -216,4 +216,20 @@ tooltip {
 #idle_inhibitor.activated {
   color: @red;
 	font-weight: bold;
+}
+
+#custom-notifications.notification {
+    color: #f38ba8;
+}
+
+#custom-notifications.none {
+    color: #a6adc8;
+}
+
+#custom-notifications.dnd-notification {
+    color: #fab387;
+}
+
+#custom-notifications.dnd-none {
+    color: #6c7086;
 }

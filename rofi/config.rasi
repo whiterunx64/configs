@@ -18,8 +18,8 @@ configuration {
 /* Keybindings */
 	kb-cancel: "Escape";               // cancel / close rofi
 	kb-accept-entry: "Return";         // launch selected entry
-	kb-row-up: "k,Control+p,Up";       // move up
-	kb-row-down: "j,Control+n,Down";   // move down
+	kb-row-up: "Control+p,Up";       // move up
+	kb-row-down: "Control+n,Down";   // move down
 	kb-page-prev: "Page_Up";  // page up
 	kb-page-next: "Page_Down"; // page down
 	kb-row-first: "Home";              // jump to first entry
@@ -33,3 +33,9 @@ configuration {
 	kb-remove-to-sol: "Control+u";      // delete to start of line
 	kb-clear-line: "Control+w";         // clear input line
 }
+
+
+
+
+
+
